@@ -9,12 +9,13 @@
       src="https://kit.fontawesome.com/19699f7fb1.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
     <!--START OF NAVIGATION BAR ---------------------------------------------->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="nav-scroll">
       <div class="container">
         <!-- Logo -->
         <div class="navbar-brand">SWAG</div>
@@ -60,21 +61,21 @@
             justify-content-center
           "
         >
-          <h1 class="fw-bold pb-4">
+          <h1 class="fw-bold pb-4" data-aos="fade-up" data-aos-duration="1000">
             We offer modern solutions for growing your business
           </h1>
-          <h3 class="fs-4 pb-4">
+          <h3 class="fs-4 pb-4" data-aos="fade-up">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ab
-            tempora aut, tenetur incidunt laudantium?
-            <div>
-              <a href="#about" class="btn btn-info text-white"
-                >Get Started <i class="fas fa-long-arrow-alt-right ms-3"></i
-              ></a>
-            </div>
+            tempora aut, tenetur incidunt laudantium?    
           </h3>
+          <div data-aos="fade-up" data-aos-delay="250">
+            <a href="#about" class="btn btn-info text-white"
+              >Get Started <i class="fas fa-long-arrow-alt-right ms-3"></i
+            ></a>
+          </div>
         </div>
         <div class="col-lg-6 d-flex align-items-center">
-          <img src="images/image2.png" alt="home-image" class="img-fluid" />
+          <img src="images/image2.png" alt="home-image" class="img-fluid" data-aos="fade-left" />
         </div>
       </div>
     </section>
@@ -93,6 +94,7 @@
               p-4
               rounded
             "
+            data-aos="fade-up"
           >
             <div>
               <i class="far fa-smile fa-3x text-primary"></i>
@@ -113,6 +115,8 @@
               p-4
               rounded
             "
+            data-aos="fade-up"
+            data-aos-delay="150"
           >
             <div>
               <i class="fas fa-trophy fa-3x text-success"></i>
@@ -133,6 +137,8 @@
               p-4
               rounded
             "
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
             <div>
               <i class="fas fa-file-invoice fa-3x text-danger"></i>
@@ -153,6 +159,8 @@
               p-4
               rounded
             "
+            data-aos="fade-up"
+            data-aos-delay="450"
           >
             <div>
               <i class="fas fa-user-friends fa-3x text-info"></i>
@@ -172,11 +180,11 @@
       <div class="container">
         <div class="text-center py-5">
           <h2
-            class="fw-bolder border-bottom border-info border-3 d-inline-block"
+            class="fw-bolder border-bottom border-info border-3 d-inline-block" data-aos="zoom-in"
           >
             About
           </h2>
-          <p class="fs-5 mt-3">
+          <p class="fs-5 mt-3" data-aos="zoom-in-up" data-aos-delay="150">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
             sapiente, quod itaque ratione fuga vel.
           </p>
@@ -184,7 +192,7 @@
         <div class="col-xl-8 mx-auto mb-5">
           <div class="accordion">
             <!-- single Accordion -->
-            <div class="accordion-item rounded-3 shadow-sm mb-3">
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up">
               <!-- Accordion header -->
               <h5 class="accordion-headder rounded-3 overflow-hidden">
                 <button
@@ -206,7 +214,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item rounded-3 shadow-sm mb-3">
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="150">
               <!-- Accordion header -->
               <h5 class="accordion-headder rounded-3 overflow-hidden">
                 <button
@@ -229,7 +237,7 @@
               </div>
             </div>
 
-            <div class="accordion-item rounded-3 shadow-sm mb-3">
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="250">
               <!-- Accordion header -->
               <h5 class="accordion-headder rounded-3 overflow-hidden">
                 <button
@@ -251,7 +259,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item rounded-3 shadow-sm mb-3">
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="350">
               <!-- Accordion header -->
               <h5 class="accordion-headder rounded-3 overflow-hidden">
                 <button
@@ -280,7 +288,7 @@
     <!-- ABOUT SECTION ENDS -->
 
     <!-- SERVICES SECTION BEGINS -->
-    <section id="servces" class="container py-5">
+    <section id="services" class="container py-5">
       <div class="text-center py-5">
         <h2
           class="
@@ -541,6 +549,21 @@
     </section>
     <!-- PRICING SECTION ENDS------------------------- -->
 
+
+
+    <!-- FOOTER STARTS ----------------------------------- -->
+    <footer class="bg-dark text-white">
+        <div class="container d-flex justify-content-between pt-3 pb-1">
+            <p>@All rights reserved</p>
+            <p>Designed by <a href="#" target="_blank" class="text-info text-decoration-none">Eleazer</a></p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS ------------------------------------ -->
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
   </body>
 </html>
